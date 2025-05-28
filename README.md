@@ -1,73 +1,103 @@
-# Welcome to your Lovable project
+# 🍽️ Food Rescue Portal
 
-## Project info
+**Empowering a Hunger-Free World — Bridging Restaurants and NGOs to Prevent Food Wastage**
 
-**URL**: https://lovable.dev/projects/797400aa-cb8a-4e18-bba4-b4c57ff32918
+---
 
-## How can I edit this code?
+## 🌟 Overview
 
-There are several ways of editing your application.
+**Food For All** is a full-stack web platform designed to **combat food waste and hunger** by building a bridge between **restaurants with surplus food** and **NGOs serving the underprivileged**.
 
-**Use Lovable**
+In a world where tons of food go to waste daily while millions sleep hungry, this app offers a **technological and humanitarian solution**. It enables restaurants to easily **donate excess food** and empowers NGOs to **request and collect food** from their vicinity.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/797400aa-cb8a-4e18-bba4-b4c57ff32918) and start prompting.
+### 🫶 Social Impact
+- ♻️ **Reduces food wastage** by redirecting edible leftovers to those in need.
+- 🍛 **Feeds hungry communities** with nutritious meals.
+- 🤝 **Fosters collaboration** between businesses and social organizations.
+- 🌍 **Promotes sustainable practices** in the food industry.
+- 💡 Raises awareness about hunger and food resource management.
+- 🧑‍💻 Makes **technology accessible for social good** through AI and automation.
 
-Changes made via Lovable will be committed automatically to this repo.
+Together, we aim to create a **more compassionate, sustainable, and connected world**.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🔧 Tech Stack
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+| Frontend | Backend | Database | AI | Deployment |
+|----------|---------|----------|----|------------|
+| Vite + React | Express.js | Supabase | Gemini API | Vercel |
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## ✨ Features
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 🍴 For Restaurants
+- Upload leftover food images to get **nutritional analysis** & quantity estimation.
+- Donate food in real-time.
+- Track donation history.
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 🧑‍🤝‍🧑 For NGOs
+- Browse available food donations.
+- **Request food** with a single click.
+- View food details using AI assistance.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### 🤖 Integrated AI Chatbot
+- Built with **Gemini API**.
+- Smart assistance for donation, request help, and FAQs.
+
+### 🧠 AI Food Analyzer
+- Upload food images and receive:
+  - 📋 Nutritional facts (calories, proteins, etc.)
+  - 🍛 Cuisine type detection
+  - 🍽️ Estimated food quantity
+
+---
+
+## 🔐 Authentication
+
+- Role-based access: **Restaurant** & **NGO**
+- Uses **Supabase Auth** for secure login & signup
+- Each role has tailored dashboard functionalities
+
+---
+
+## 📸 How It Works
+
+1. **Restaurant uploads food image** 📷
+2. **AI analyzes food** – nutrition, quantity, cuisine 🍱
+3. **Restaurant donates food** ➡️ 📦
+4. **NGO requests or receives food** 🙏
+
+---
+
+## 🚀 Deployment
+
+- **Frontend** hosted on **Vercel**
+- **Backend API** hosted with Express server
+- **Supabase** for Realtime DB & Auth
+- **AI Services** via Gemini API
+
+---
+
+## 🖼️ Screenshots
+
+> _Include screenshots here to show login, donation panel, AI analyzer result, chatbot, etc._
+
+---
+
+## 🧪 Run Locally
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/food-for-all.git
+cd food-for-all
+
+# Install frontend dependencies
+npm install
 npm run dev
-```
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/797400aa-cb8a-4e18-bba4-b4c57ff32918) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+# Install backend dependencies
+cd ../server
+npm install
+node index.js
