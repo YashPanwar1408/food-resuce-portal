@@ -282,7 +282,7 @@ useEffect(() => {
                 {userType === 'ngo' ? (
                   <div className="bg-white rounded-xl shadow p-6 flex flex-col items-center justify-center">
                 <h3 className="text-lg font-semibold mb-4 text-green-700">Donations Over Time</h3>
-                <ResponsiveContainer width="100%" height={160}>
+                <ResponsiveContainer width="100%" height={130}>
                   <BarChart data={[
                     { date: '2025-05-10', donation: 40 },
                     { date: '2025-05-11', donation: 70 },
